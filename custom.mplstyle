@@ -1,0 +1,101 @@
+# Style spines
+axes.linewidth: 2               # Spine edge line width
+axes.edgecolor: .2
+axes.spines.top: False          # Display axis spines (True or False)
+axes.spines.left: False         
+axes.spines.right: False
+axes.spines.bottom: True
+
+
+# Set line styling for line plots
+lines.linewidth: 4              # line width in points
+lines.solid_capstyle: butt      # Makes a square ending of the line stopping at datapoint
+
+# Grid style
+axes.grid: true                 # display grid or not
+axes.grid.axis: y               # which axis the grid should apply to          
+grid.linewidth: 1               # in points
+grid.color: A5A5A5              # grid color
+axes.axisbelow: True            # Sets axis gridlines below lines and patches.
+
+# Move tick labels to right side
+ytick.labelleft: False          # draw tick labels on the left side
+ytick.labelright: True          # draw tick labels on the right side
+ytick.alignment: bottom         # alignment of yticks
+
+# Set spacing for figure and also DPI.
+figure.subplot.left: 0.08       # the left side of the subplots of the figure
+figure.subplot.right: 0.95      # the right side of the subplots of the figure
+figure.subplot.bottom: 0.07     # the bottom of the subplots of the figure
+figure.figsize: 16, 11          # figure size in inches
+figure.dpi: 150                 # figure dots per inch
+
+# Properties for saving the figure. Ensure a high DPI when saving so we have a good resolution.
+savefig.dpi:       300          # figure dots per inch or 'figure'
+savefig.facecolor: white        # figure face color when saving
+savefig.bbox:      tight        # {tight, standard}
+savefig.pad_inches:   0.2       # padding when bbox is set to tight
+
+# Legend Styling
+legend.framealpha: 1
+
+# Setting font sizes and spacing
+axes.labelsize: 18              # font size of the x and y labels
+xtick.labelsize: 18             # font size of the x tick labels      
+ytick.labelsize: 18             # font size of the y tick labels
+font.size: 18                   # default font size for text, given in points.
+xtick.major.pad: 8              # distance to major tick label in points  
+ytick.major.pad: -40             # distance to major tick label in points
+
+# Remove major and minor ticks except for on the x-axis.
+xtick.major.size: 5             # major tick size in points
+xtick.major.width: 3          # major tick width in points
+xtick.minor.size: 0             # minor tick size in points
+ytick.major.size: 0
+ytick.major.width: 0
+ytick.minor.size: 0
+
+# Tick label colors
+xtick.color: .2
+ytick.color: .2
+xtick.labelcolor: inherit
+ytick.labelcolor: inherit
+
+# Set custom colors. All colors are in web style hex format.
+# axes.prop_cycle: cycler('color', ['1879CE', 'FC4F30', '3EBCD2', '379A8B', 'EBB434', '758D99'])
+                                  # red, blue, cyan, green, yellow, olive, purple, gold
+axes.prop_cycle: cycler("color", ["DB444B", "006BA2", "3EBCD2", "379A8B", "EBB434", "B4BA39", "9A607F", "D1B07C"])
+
+# Set font
+font.family:  sans-serif
+font.style:   normal
+font.variant: normal       # normal or small-caps
+font.weight:  normal       # normal, bold, bolder, lighter,
+                           # 100, 200, 300, ..., 900.
+
+#font.serif:      DejaVu Serif, Bitstream Vera Serif, Computer Modern Roman, New Century Schoolbook, Century Schoolbook L, Utopia, ITC Bookman, Bookman, Nimbus Roman No9 L, Times New Roman, Times, Palatino, Charter, serif
+font.sans-serif:  Avenir Next Condensed, DejaVu Sans, Bitstream Vera Sans, Computer Modern Sans Serif, Lucida Grande, Verdana, Geneva, Lucid, Arial, Helvetica, Avant Garde, sans-serif
+#font.cursive:    Apple Chancery, Textile, Zapf Chancery, Sand, Script MT, Felipa, Comic Neue, Comic Sans MS, cursive
+#font.fantasy:    Chicago, Charcoal, Impact, Western, Humor Sans, xkcd, fantasy
+#font.monospace:  DejaVu Sans Mono, Bitstream Vera Sans Mono, Computer Modern Typewriter, Andale Mono, Nimbus Mono L, Courier New, Courier, Fixed, Terminal, monospace
+
+
+# Set default text color
+text.color: .2
+
+# Title styling
+axes.titlelocation: left        # alignment of the title: {left, right, center}
+axes.titlepad: 20               # pad between axes and title in points
+axes.titlesize: 20              # font size of the axes title
+axes.titleweight: normal          # font weight of title
+axes.titlecolor: .2
+
+# Suptitle
+figure.titlesize: 28
+figure.titleweight: bold
+
+
+# Scientific notation
+axes.formatter.limits: -5, 7  # use scientific notation if log10
+                               # of the axis range is smaller than the
+                               # first or larger than the second
